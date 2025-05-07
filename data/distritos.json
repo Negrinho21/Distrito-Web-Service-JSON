@@ -1,0 +1,129 @@
+[
+    {
+      "id": 1,
+      "nome": "Água Grande",
+      "populacao_total": 60847,
+      "masculino": 30220,
+      "feminino": 30627,
+      "urbano": {
+        "total": 60847,
+        "masculino": 30220,
+        "feminino": 30627
+      },
+      "rural": {
+        "total": 0,
+        "masculino": 0,
+        "feminino": 0
+      },
+      "area_km2": 16.5
+    },
+    {
+      "id": 2,
+      "nome": "Cantagalo",
+      "populacao_total": 20794,
+      "masculino": 10539,
+      "feminino": 10255,
+      "urbano": {
+        "total": 12291,
+        "masculino": 5957,
+        "feminino": 6334
+      },
+      "rural": {
+        "total": 8503,
+        "masculino": 4398,
+        "feminino": 4105
+      },
+      "area_km2": 119.0
+    },
+    {
+      "id": 3,
+      "nome": "Caué",
+      "populacao_total": 7424,
+      "masculino": 3875,
+      "feminino": 3549,
+      "urbano": {
+        "total": 3390,
+        "masculino": 1735,
+        "feminino": 1655
+      },
+      "rural": {
+        "total": 4034,
+        "masculino": 2140,
+        "feminino": 1894
+      },
+      "area_km2": 267.0
+    },
+    {
+      "id": 4,
+      "nome": "Lembá",
+      "populacao_total": 17229,
+      "masculino": 7968,
+      "feminino": 9261,
+      "urbano": {
+        "total": 12643,
+        "masculino": 5900,
+        "feminino": 6743
+      },
+      "rural": {
+        "total": 4586,
+        "masculino": 2068,
+        "feminino": 2418
+      },
+      "area_km2": 229.5
+    },
+    {
+      "id": 5,
+      "nome": "Lobata",
+      "populacao_total": 23068,
+      "masculino": 11008,
+      "feminino": 12060,
+      "urbano": {
+        "total": 8369,
+        "masculino": 3836,
+        "feminino": 4533
+      },
+      "rural": {
+        "total": 14717,
+        "masculino": 7172,
+        "feminino": 7545
+      },
+      "area_km2": 105.0
+    },
+    {
+      "id": 6,
+      "nome": "Mé-Zóchi",
+      "populacao_total": 50697,
+      "masculino": 24000,
+      "feminino": 26697,
+      "urbano": {
+        "total": 20416,
+        "masculino": 9360,
+        "feminino": 11056
+      },
+      "rural": {
+        "total": 30281,
+        "masculino": 14640,
+        "feminino": 15641
+      },
+      "area_km2": 122.0
+    },
+    {
+      "id": 7,
+      "nome": "Região Autónoma do Príncipe",
+      "populacao_total": 9830,
+      "masculino": 4794,
+      "feminino": 5036,
+      "urbano": {
+        "total": 3045,
+        "masculino": 1426,
+        "feminino": 1619
+      },
+      "rural": {
+        "total": 6785,
+        "masculino": 3368,
+        "feminino": 3417
+      },
+      "area_km2": 142.0
+    }
+  ]
+  
