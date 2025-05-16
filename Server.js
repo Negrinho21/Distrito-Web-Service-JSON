@@ -14,7 +14,7 @@ app.use(cors());
 app.use(express.json());
 
 // Endpoint para listar todos os distritos
-app.get('/api/distritoss', (req, res) => {
+app.get('/api/distritos', (req, res) => {
   res.json(distritos);
 });
 
