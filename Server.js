@@ -1,7 +1,8 @@
-// server.js
+
 const express = require('express');
 const cors = require('cors');
 const app = express();
+const path = require('path');
 const port = 8000;
 
 // Dados simulados (JSON local)
@@ -12,12 +13,18 @@ app.use(cors());
 
 // Parse de JSON no corpo (caso futuro de POST/PUT)
 app.use(express.json());
+app.use(express.static(path.join(__dirname)));
 
 // Endpoint para listar todos os distritos
 app.get('/api/distritos', (req, res) => {
   res.json(distritos);
 });
-
+app.get('/api', (req, res) => {
+  res.sendFile(path.join(__dirname, 'doc.html'));
+});
+app.get('/', (req, res) => {
+  res.redirect('/api');
+});
 // Endpoint para mostrar um distrito específico por ID
 app.get('/api/distritos/id/:id', (req, res) => {
   const distrito = distritos.find(d => d.id == req.params.id);

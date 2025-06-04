@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>API - Distritos de São Tomé e Príncipe</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f3f4f6;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    header {
+      background: #004080;
+      color: white;
+      padding: 30px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 30px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #eee;
+    }
+
+    code, pre {
+      background: #f4f4f4;
+      padding: 10px;
+      border-radius: 5px;
+      display: block;
+      overflow-x: auto;
+    }
+
+    .endpoint {
+      margin-bottom: 40px;
+    }
+
+    .badge {
+      background: #004080;
+      color: white;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.8em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>API - Distritos de São Tomé e Príncipe</h1>
+    <p>Consulta de dados demográficos, urbanos e rurais dos distritos de STP</p>
+  </header>
+
+  <div class="container">
+
+    <h2>📌 Sumário de Endpoints</h2>
+    <!-- <table>
+      <tr>
+        <th>Método</th>
+        <th>Endpoint</th>
+        <th>Descrição</th>
+      </tr>
+      <tr>
+        <td><span class="badge">GET</span></td>
+        <td><code>/api/distritos</code></td>
+        <td>Retorna todos os distritos</td>
+      </tr>
+      <tr>
+        <td><span class="badge">GET</span></td>
+        <td><code>/api/distritos/id/:id</code></td>
+        <td>Busca um distrito por ID</td>
+      </tr>
+      <tr>
+        <td><span class="badge">GET</span></td>
+        <td><code>/api/distritos/nome/:nome</code></td>
+        <td>Busca um distrito pelo nome</td>
+      </tr>
+    </table>
+ -->
+    <div class="endpoint">
+      <h2>GET /api/distritos</h2>
+      <p><strong>Descrição:</strong> Retorna todos os distritos com seus dados completos.</p>
+      <p><strong>Resposta (200):</strong></p>
+      <pre>[
+  {
+    "id": 1,
+    "nome": "Água Grande",
+    "populacao_total": 60847,
+    "masculino": 30220,
+    "feminino": 30627,
+    "urbano": {
+      "total": 60847,
+      "masculino": 30220,
+      "feminino": 30627
+    },
+    "rural": {
+      "total": 0,
+      "masculino": 0,
+      "feminino": 0
+    },
+    "area_km2": 16.5
+  }
+]</pre>
+    </div>
+
+    <div class="endpoint">
+      <h2>GET /api/distritos/id/:id</h2>
+      <p><strong>Descrição:</strong> Retorna um único distrito com base no ID fornecido.</p>
+      <p><strong>Parâmetros:</strong></p>
+      <ul>
+        <li><code>id</code> (integer): ID do distrito</li>
+      </ul>
+      <p><strong>Exemplo:</strong> <code>/api/distritos/id/2</code></p>
+      <p><strong>Resposta (200):</strong></p>
+      <pre>{
+  "id": 2,
+  "nome": "Cantagalo",
+  "populacao_total": 20794,
+  "area_km2": 119.0,
+  ...
+}</pre>
+      <p><strong>Resposta (404):</strong></p>
+      <pre>{
+  "message": "Distrito não encontrado"
+}</pre>
+    </div>
+
+    <div class="endpoint">
+      <h2>GET /api/distritos/nome/:nome</h2>
+      <p><strong>Descrição:</strong> Retorna um distrito com base no nome fornecido.</p>
+      <p><strong>Parâmetros:</strong></p>
+      <ul>
+        <li><code>nome</code> (string): Nome do distrito (sem case sensitive)</li>
+      </ul>
+      <p><strong>Exemplo:</strong> <code>/api/distritos/nome/príncipe</code></p>
+      <p><strong>Resposta (200):</strong></p>
+      <pre>{
+  "id": 7,
+  "nome": "Região Autónoma do Príncipe",
+  "populacao_total": 9830,
+  "area_km2": 142.0,
+  ...
+}</pre>
+    </div>
+
+    <div class="endpoint">
+      <h2>GET /api</h2>
+      <p>Exibe esta documentação da API.</p>
+    </div>
+
+    <h2>📎 Códigos de Resposta</h2>
+    <ul>
+      <li><strong>200 OK</strong> – Requisição bem-sucedida.</li>
+      <li><strong>404 Not Found</strong> – Distrito não encontrado.</li>
+      <li><strong>500 Internal Server Error</strong> – Erro interno (se houver).</li>
+    </ul>
+
+  </div>
+
+  <footer style="text-align: center; margin-top: 30px;">
+    &copy; 2025 • API por [Seu Nome] • Projeto educacional para STP 🇸🇹
+  </footer>
+</body>
+</html>
