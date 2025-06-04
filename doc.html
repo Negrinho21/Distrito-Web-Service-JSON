@@ -72,13 +72,45 @@
 </head>
 <body>
 
-  <header>
-    <h1>API - Distritos de São Tomé e Príncipe</h1>
-    <p>Consulta de dados demográficos, urbanos e rurais dos distritos de STP</p>
+    <header>
+    <h1>API – Distritos de São Tomé e Príncipe</h1>
+    <p>Dados demográficos, urbanos e rurais dos distritos de STP em formato JSON</p>
+
+  
   </header>
 
   <div class="container">
+  <div class="details">
+      <h3>Visão Geral</h3>
+      <p>Esta API fornece informações detalhadas sobre os 7 distritos de São Tomé e Príncipe, incluindo:</p>
+      <ul>
+        <li>População total e distribuição por gênero (masculino/feminino).</li>
+        <li>Divisão urbano vs. rural.</li>
+        <li>Área em quilômetros quadrados.</li>
+      </ul>
 
+      <h3>Benefícios</h3>
+      <ul>
+        <li><strong>Dados confiáveis e organizados:</strong> ideal para análises demográficas ou estudos acadêmicos.</li>
+        <li><strong>Leve e rápido:</strong> retorna apenas o JSON necessários.</li>
+        <li><strong>Fácil integração:</strong> pode ser consumida por aplicações web, mobile ou serviços de visualização de dados (BI).</li>
+        <li><strong>Sem necessidade de autenticação:</strong> disponível publicamente para uso em projetos educacionais ou governamentais.</li>
+      </ul>
+
+      <h3>Como começar</h3>
+      <ul>
+        <li>URL base: <code>https://distrito-web-service-json.onrender.com/api/distritos</code> (ou o domínio onde o servidor estiver hospedado).</li>
+        <li>Formato de resposta: <code>application/json</code>.</li>
+        
+      </ul>
+
+    <!--   <h3>Versão e Contato</h3>
+      <ul>
+        <li><strong>Versão da API:</strong> 1.0.0</li>
+        <li><strong>Última atualização:</strong> 04 de junho de 2025</li>
+        <li><strong>Desenvolvedor:</strong> [Seu Nome] (<a href="mailto:seuemail@exemplo.com" style="color: white; text-decoration: underline;">seuemail@exemplo.com</a>)</li>
+      </ul> -->
+    </div>
     <h2>📌 Sumário de Endpoints</h2>
     <!-- <table>
       <tr>
@@ -170,7 +202,7 @@
     </div>
 
     <div class="endpoint">
-      <h2>GET /api</h2>
+      <h2>GET /api/document</h2>
       <p>Exibe esta documentação da API.</p>
     </div>
 
@@ -184,7 +216,7 @@
   </div>
 
   <footer style="text-align: center; margin-top: 30px;">
-    &copy; 2025 • API por [Seu Nome] • Projeto educacional para STP 🇸🇹
+    &copy; 2025  • Projeto Academico 
   </footer>
 </body>
 </html>

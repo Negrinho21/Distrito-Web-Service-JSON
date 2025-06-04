@@ -19,11 +19,11 @@ app.use(express.static(path.join(__dirname)));
 app.get('/api/distritos', (req, res) => {
   res.json(distritos);
 });
-app.get('/api', (req, res) => {
+app.get('/api/document', (req, res) => {
   res.sendFile(path.join(__dirname, 'doc.html'));
 });
 app.get('/', (req, res) => {
-  res.redirect('/api');
+  res.redirect('/api/document');
 });
 // Endpoint para mostrar um distrito específico por ID
 app.get('/api/distritos/id/:id', (req, res) => {
